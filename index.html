@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>grid-vue</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+body{
+  padding-left: 10px;
+}
+</style>
+</head>
+
+<body>
+  <div id="app">
+    <app :linhas="[
+    {nome:'nome 1', idade:1, data:'01/01/2017',checked:false},
+    {nome:'nome 2', idade:2, data:'02/02/2017',checked:true},
+    {nome:'nome 3', idade:3, data:'03/03/2017',checked:false},
+    {nome:'nome 4', idade:4, data:'04/04/2017',checked:true}
+  ]"
+  :colunas="['nome','idade','data']">
+    </app>
+  </div>
+  <script src="/dist/build.js"></script>
+</body>
+</html>
